@@ -1,0 +1,19 @@
+{
+  "builds": [
+    {
+      "src": "src/main/java/com/example/App.java",
+      "use": "@now/java",
+      "config": {
+        "maxLambdaSize": "5mb"
+      }
+    }
+  ],
+  "build": {
+    "env": {
+      "JAVA_HOME": "/usr/lib/jvm/java-1.8.0"
+    },
+    "scripts": {
+      "now-build": "bash build.sh"
+    }
+  }
+}
